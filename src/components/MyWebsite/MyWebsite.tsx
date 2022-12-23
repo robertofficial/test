@@ -32,7 +32,7 @@ const MyWebsite1: any = styled('div')({
 });
 
 const Rectangle1: any = styled('div')({
-  backgroundColor: `rgba(217, 217, 217, 1)`,
+  backgroundColor: `rgba(255, 0, 0, 1)`,
   width: `420px`,
   height: `74px`,
   position: `absolute`,
@@ -40,10 +40,27 @@ const Rectangle1: any = styled('div')({
   top: `536px`,
 });
 
+const Test: any = styled('div')({
+  textAlign: `left`,
+  whiteSpace: `pre-wrap`,
+  color: `rgba(255, 255, 255, 1)`,
+  fontStyle: `normal`,
+  fontFamily: `Inter`,
+  fontWeight: `400`,
+  fontSize: `12px`,
+  letterSpacing: `0px`,
+  textDecoration: `none`,
+  textTransform: `none`,
+  position: `absolute`,
+  left: `302px`,
+  top: `273px`,
+});
+
 function MyWebsite(props: MyWebsiteProps): JSX.Element {
   return (
     <MyWebsite1>
       <Rectangle1></Rectangle1>
+      <Test>{`Test`}</Test>
     </MyWebsite1>
   );
 }

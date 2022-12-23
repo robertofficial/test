@@ -16,10 +16,17 @@
 
 
 
+
+export interface MyWebsiteProps {
+  className?: any;
+}
+
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
+
 
 
 
@@ -31,11 +38,8 @@ export interface SampleCardGridProps {
 
 
 
+
 export interface Desktop1Props {
   className?: any;
 }
 
-
-export interface MyWebsiteProps {
-  className?: any;
-}
