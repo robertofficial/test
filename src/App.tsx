@@ -2,14 +2,14 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from 'src/MyDesignSystemLightTheme';
-import Desktop1 from 'src/components/Desktop1/Desktop1';
+import MyWebsite from 'src/components/MyWebsite/MyWebsite';
 
 function App() {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={questTheme}>
         <Routes>
-          <Route path="/" element={<Desktop1 />} />
+          <Route path="/" element={<MyWebsite />} />
         </Routes>
       </ThemeProvider>
     </StyledEngineProvider>

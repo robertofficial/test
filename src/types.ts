@@ -15,11 +15,6 @@
 
 
 
-export interface SampleCardGridProps {
-  className?: any;
-}
-
-
 
 export interface SampleCardProps {
   className?: any;
@@ -28,6 +23,19 @@ export interface SampleCardProps {
 
 
 
+
+export interface SampleCardGridProps {
+  className?: any;
+}
+
+
+
+
 export interface Desktop1Props {
+  className?: any;
+}
+
+
+export interface MyWebsiteProps {
   className?: any;
 }
