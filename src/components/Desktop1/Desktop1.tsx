@@ -47,6 +47,11 @@ const Soon: any = styled('div')({
   top: `476px`,
 });
 
+const ExternalLink: any = styled('a')({
+  width: `100%`,
+  textDecoration: `none`,
+});
+
 const Rectangle1: any = styled('div')({
   backgroundColor: `rgba(16, 198, 255, 1)`,
   width: `299px`,
@@ -56,7 +61,7 @@ const Rectangle1: any = styled('div')({
   top: `528px`,
 });
 
-const ExternalLink: any = styled('a')({
+const ExternalLink1: any = styled('a')({
   width: `299px`,
   textDecoration: `none`,
 });
@@ -64,10 +69,12 @@ const ExternalLink: any = styled('a')({
 function Desktop1(props: Desktop1Props): JSX.Element {
   return (
     <Desktop11>
-      <Soon>{`soon`}</Soon>
-      <ExternalLink href="http://youtube.com">
-        <Rectangle1></Rectangle1>
+      <ExternalLink href="https://google.com">
+        <Soon>{`soon`}</Soon>
       </ExternalLink>
+      <ExternalLink1 href="http://youtube.com">
+        <Rectangle1></Rectangle1>
+      </ExternalLink1>
     </Desktop11>
   );
 }
