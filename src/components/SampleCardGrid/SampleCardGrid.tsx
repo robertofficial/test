@@ -16,6 +16,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import SampleCard from 'src/components/SampleCard/SampleCard';
 import { SampleCardGridProps } from 'src/types';
+import useSampleCardGrid from 'src/components/SampleCardGrid/useSampleCardGrid';
 
 const SampleCardGrid1: any = styled('div')({
   backgroundColor: `rgba(255, 255, 255, 1)`,
@@ -52,11 +53,13 @@ const SampleCard1: any = styled(SampleCard)(({ theme }: any) => ({
 }));
 
 function SampleCardGrid(props: SampleCardGridProps): JSX.Element {
+  const { data } = useSampleCardGrid();
+
   return (
     <SampleCardGrid1>
       <Grid>
-        {undefined &&
-          undefined.map((undefined: any, index: number) => {
+        {data.flowers &&
+          data.flowers.map((flower: any, index: number) => {
             return <SampleCard1 key={index} />;
           })}
       </Grid>
